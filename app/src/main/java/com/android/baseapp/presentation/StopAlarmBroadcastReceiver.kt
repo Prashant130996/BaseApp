@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import com.android.baseapp.presentation.ui.ReminderNotificationHelper
 
+//Receiver class to stop alarm and dismiss notification.
 class StopAlarmBroadcastReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context?, intent: Intent?) {

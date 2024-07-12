@@ -13,6 +13,9 @@ import com.android.baseapp.presentation.MainActivity
 import com.android.baseapp.presentation.StopAlarmBroadcastReceiver
 import com.android.baseapp.utils.Constants
 
+/**
+ * Helper class to display and dismiss notification.
+ * */
 class ReminderNotificationHelper {
 
     fun displayNotification(context: Context, message: String, title: String) {

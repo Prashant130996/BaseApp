@@ -1,4 +1,4 @@
-package com.example.movieturn.ui
+package com.android.baseapp.presentation.ui
 
 import android.view.View
 import androidx.fragment.app.Fragment

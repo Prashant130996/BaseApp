@@ -19,7 +19,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.baseapp.R
 import com.android.baseapp.databinding.FragmentSetAlarmBinding
 import com.android.baseapp.util.isSdkIntTAndAbove
-import com.example.movieturn.ui.viewBinding
 import com.example.movieturn.utils.toast
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
@@ -70,6 +69,9 @@ class SetAlarmFragment : Fragment(R.layout.fragment_set_alarm) {
         }
     }
 
+    /**
+     * Function to handle notification permission for Android 13 and above.
+     * */
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     private fun handleNotification() {
         if (ContextCompat.checkSelfPermission(

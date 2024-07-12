@@ -20,6 +20,10 @@ class SetAlarmViewModel @Inject constructor(
 ) : ViewModel() {
 
 
+    /**
+     * Fun to set alarm data into DB
+     * @param dateTime: Time and date for the alarm in milliseconds
+     * */
     fun setAlarm(dateTime: Long) {
         viewModelScope.launch {
             val alarm = Alarm(dateTime)
@@ -28,12 +32,18 @@ class SetAlarmViewModel @Inject constructor(
         }
     }
 
+    /**
+     * Fun to delete alarm data from DB.
+     * @param alarm Alarm object to be deleted
+     * */
+    // TODO: can be called from UI class to delete scheduled alarm.
     fun deleteAlarm(alarm: Alarm) {
         viewModelScope.launch {
             deleteAlarmUseCase.invoke(alarm)
         }
     }
 
+    //Display all the created alarms.
     val allAlarms = getAlarmsUseCase.invoke()
 
 }
