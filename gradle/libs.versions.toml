@@ -1,0 +1,46 @@
+[versions]
+agp = "8.3.1"
+kotlin = "1.9.0"
+coreKtx = "1.12.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+hiltDagger = "2.51.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+activity = "1.8.2"
+kspVersion = "1.9.0-1.0.13"
+constraintlayout = "2.1.4"
+sdpAndroid = "1.1.0"
+sspAndroid = "1.1.0"
+nav_version = "2.7.7"
+room_version = "2.6.1"
+lifecycle_version = "2.8.3"
+roomKtx = "2.6.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltDagger" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltDagger" }
+room-android = { group = "androidx.room", name = "room-runtime", version.ref = "room_version" }
+room-android-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room_version" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+sdp-android = { module = "com.intuit.sdp:sdp-android", version.ref = "sdpAndroid" }
+ssp-android = { module = "com.intuit.ssp:ssp-android", version.ref = "sspAndroid" }
+android-nav-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "nav_version" }
+android-nav-frag = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "nav_version" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle_version" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle_version" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+hiltDaggerAndroid = { id = "com.google.dagger.hilt.android", version.ref = "hiltDagger" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "kspVersion" }
